@@ -1,0 +1,207 @@
+/* Estilos para o carrossel */
+.carousel {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: auto;
+  }
+
+  
+  .team-member {
+    display: flex;
+    flex-direction: row;
+    margin: 80px; /* Espaçamento entre os membros da equipe */
+    border-radius: 5px;
+  }
+  
+  .team-member img {
+    display: block; /* Garante que a borda seja aplicada corretamente */
+    width: auto; /* Largura fixa para manter a forma quadrada */
+    max-width: 300px; /* Largura máxima */
+    height: 300px; /* Altura automática para manter a proporção */
+    border: 2px solid #333; /* Borda personalizada */
+    border-radius: 5px;
+    transition: transform 0.5s ease; /* Transição suave para o efeito hover */
+  }
+  
+  /* EFEITO HOVER DAS IMAGENS */
+  .team-member img:hover,
+  .team-member img.hover-effect {
+    transform: scale(1.1); /* Escala a imagem ao passar o mouse */
+    border: 2px solid #333;
+  }
+  
+  /* Estilo para o texto CRIADORES */
+  .member-info {
+    text-align: center; /* Centraliza o texto */
+    margin-top: 15px; /* Espaçamento superior */
+  }
+
+  .member-info2{
+    text-align: center; /* Centraliza o texto */
+    margin-top: 15px; /* Espaçamento superior */
+    margin-left: 50px;
+  }
+  
+  .member-info h3 {
+    margin: 0; /* Remove as margens padrão */
+  }
+  
+  /* Estilo para o título CRIADORES */
+  h2 {
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 20px; /* Espaçamento inferior */
+  }
+  
+  /* Estilo para o contêiner CRIADORES */
+  .container1 {
+    max-width: 800px; /* Largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+    padding: 20px; /* Espaçamento interno */
+    display: grid;
+    justify-content: center;
+  }
+  
+  /* Estilo para responsividade */
+  @media (max-width: 768px) {
+    .team-member {
+      flex-direction: column; /* Alinha as imagens uma em cima da outra em dispositivos móveis */
+      margin: 0px; /* Ajusta o espaçamento entre os membros da equipe */
+    }
+    
+    .team-member img {
+      max-width: 100%; /* Garante que as imagens não ultrapassem o limite da tela */
+      height: auto; /* Mantém a proporção da imagem */
+    }
+    .img-2{
+        margin-left: 120px;
+        display: grid;
+        align-items: center;
+      }
+  }
+
+  .img-2{
+    margin-left: 10%;
+    display: grid;
+    align-items: center;
+  }
+  
+    /* Estilo css do GOOGLE MAPS */
+
+    .map-container{
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    .iframe-maps{
+        width: 100%;
+    }
+
+ hr.separator {
+    border: 0;
+    height: 2px;
+    background-color: black;
+    margin: 20px 0;
+    width: 100%; /* Garante que a barra ocupe toda a largura da página */
+}
+
+/* Estilo adicional para garantir que a barra fique na largura total da tela em dispositivos móveis */
+@media (max-width: 768px) {
+    hr.separator {
+        margin: 20px 0; /* Ajusta a margem para dispositivos móveis */
+    }
+}
+.container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    .img-2{
+      margin-left: -0px;
+    }
+  }
+
+  /* SECTION SIGA EM NOSSAS REDES SOCIAIS*/
+
+  
+  .social-media-container {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .social-media-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .social-media-list li {
+    margin: 10px;
+  }
+  
+  .social-media-list a {
+    text-decoration: none;
+    color: #337ab7;
+    transition: color 0.2s ease;
+  }
+  
+  .social-media-list a:hover {
+    color: #23527c;
+  }
+  
+  .social-media-list img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  
+  .social-media-list span {
+    font-size: 18px;
+    font-weight: bold;
+    vertical-align: middle;
+  }
+
+  .text-maps {
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 120px;
+    background-color: #000000;
+    border: 1px solid black;
+    padding: 10px;
+    color: #fff;
+  }
+
+  .box-info{
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (max-width: 768px) {
+    .member-info2{
+      margin-left: -30px;
+    }
+  }
+
+  .emailContato{
+    font-size: 15px;
+  }
+
+  .col-xs-6{
+    width: 35%
+  }

@@ -1,0 +1,116 @@
+.col-md-7 {
+  border: 1px solid black; /* adiciona uma borda preta */
+  background-color: #4f6cab; /* preenchimento em rosa claro */
+}
+
+.input1,
+.input2,
+.input3 {
+  display: flexbox;
+}
+
+/* @MEDIA DO "SEU PEDIDO" */
+
+@media (max-width: 768px) {
+  .col-md-5 {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .col-md-7 {
+    height: auto;
+  }
+}
+
+.payment-methods {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment-btn {
+  width: 90px;
+  height: 40px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #91c9ff;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+.payment-btn svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.payment-btn:hover {
+  transition: 1s ease-in-out;
+  background: #232723;
+}
+
+.payment-btn:hover svg {
+  stroke-dashoffset: -480;
+  color: #ffff;
+}
+
+.payment-btn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.payment-btn {
+  color: #fff;
+}
+
+.method {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 0 5px 0; /* Correção dos valores de padding */
+}
+
+/* CSS DA TABELA ONDE RECEBE OS ITENS DO USUÁRIO */
+
+.cart-summary {
+  border: 1px solid #ddd;
+  height: 300px; /* Ajustado para 80px de altura */
+  width: 400px; /* Ajustado para 80px de largura */
+  font-family: Arial, sans-serif;
+  background-color: rgb(231, 231, 127);
+  padding: 10px; /* Ajuste de padding para adicionar algum espaçamento interno */
+  box-sizing: border-box; /* Garante que o padding e a borda sejam incluídos na largura e altura totais */
+  overflow: auto; /* Adiciona rolagem se o conteúdo exceder o tamanho do contêiner */
+}
+
+.product-list {
+  margin-bottom: 15px;
+  list-style-type: none;
+  padding: 0;
+}
+.product-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+.product-item:last-child {
+  border-bottom: none;
+}
+.total,
+.shipping {
+  font-weight: bold;
+  padding-top: 10px;
+}
+.shipping {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
