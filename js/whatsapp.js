@@ -81,13 +81,13 @@ function sendToWhatsapp() {
 
 function addToCart(button) {
   // Encontra o elemento do produto mais próximo
-  var productElement = button.closest('product');
+  var productElement = button.closest('.product');
   
   // Lê o nome do produto
-  var productName = productElement.querySelector('nameproduct').textContent;
+  var productName = productElement.querySelector('.nameproduct').textContent;
   
-  // Lê o preço do produto
-  var productPrice = productElement.querySelector('productprice').textContent;
+  // Lê o preço do produto e remove o símbolo de moeda para conversão
+  var productPrice = parseFloat(productElement.querySelector('.productprice').textContent.replace('$', ''));
   
   // Cria uma variável para armazenar o nome e o preço do produto
   var productInfo = {
@@ -95,16 +95,15 @@ function addToCart(button) {
       price: productPrice,
   };
 
-
-  //------------------------------------------------------------------------------------------//
-
-  // AQUI 
-  // Exibe o nome e o preço do produto no console
-  var productList = document.getElementById()   /*  <--  COLOQUE A VARIAVEL DA LISTA NAO ORDENADA DO SEU HTML */ 
-  
   // Adiciona o produto à lista de produtos adicionados na tela
   var productList = document.getElementById('product-list');
   var productItem = document.createElement('li');
-  productItem.textContent = `Produto: ${productInfo.name} - Preço: ${productInfo.price}`;
+  productItem.textContent = `Produto: ${productInfo.name} - Preço: $${productInfo.price.toFixed(2)}`;
   productList.appendChild(productItem);
+
+  // Atualiza o total da compra
+  var totalElement = document.getElementById('total-amount');
+  var currentTotal = parseFloat(totalElement.textContent.replace('$', '')) || 0;
+  var newTotal = currentTotal + productInfo.price;
+  totalElement.textContent = `$${newTotal.toFixed(2)}`;
 }
