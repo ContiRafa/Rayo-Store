@@ -94,7 +94,11 @@ function addToCart(button) {
       name: productName,
       price: productPrice,
   };
-  
+
+
+  //------------------------------------------------------------------------------------------//
+
+  // AQUI 
   // Exibe o nome e o preço do produto no console
   var productList = document.getElementById()   /*  <--  COLOQUE A VARIAVEL DA LISTA NAO ORDENADA DO SEU HTML */ 
   
