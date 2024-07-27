@@ -81,13 +81,13 @@ function sendToWhatsapp() {
 
 function addToCart(button) {
   // Encontra o elemento do produto mais próximo
-  var productElement = button.closest('.product');
+  var productElement = button.closest('product');
   
   // Lê o nome do produto
-  var productName = productElement.querySelector('.nameproduct').textContent;
+  var productName = productElement.querySelector('nameproduct').textContent;
   
   // Lê o preço do produto
-  var productPrice = productElement.querySelector('.productprice').textContent;
+  var productPrice = productElement.querySelector('productprice').textContent;
   
   // Cria uma variável para armazenar o nome e o preço do produto
   var productInfo = {
