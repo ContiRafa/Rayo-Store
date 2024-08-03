@@ -1,0 +1,11 @@
+@media(max-width: 768px){
+    .product {
+      width: 300px;
+    }
+    
+  }
+
+.product{
+    display: flexbox;
+    width: 220px;
+}
