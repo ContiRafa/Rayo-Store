@@ -784,9 +784,12 @@ button:active {
   }
   
 }
-
 @media(max-width: 768px){
-  
+  .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 
@@ -2244,7 +2247,6 @@ button:active {
 #footer .col-xs-6 {
   float: left;
   margin: 0;
-  padding: 0;
 }
 
 #footer .footer {
