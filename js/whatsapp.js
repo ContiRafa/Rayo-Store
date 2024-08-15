@@ -29,6 +29,16 @@ function getCustomerInfo() {
   };
 }
 
+function bloquearEnvio() {
+
+  const enviar = document.getElementById("sendToWhatsapp"){
+    if (email == "" || email == null) {
+      alert("Por favor, preencha o campo de e-mail");
+      event.preventDefault();
+    }
+  }
+}
+
 // Função para coletar os produtos selecionados
 function getProducts() {
   let produtos = "";
@@ -75,7 +85,4 @@ function sendToWhatsapp() {
   window.open(url, "_blank").focus();
 }
 
-
-
 //----------------------------------------------------------------------------------------------//
-
