@@ -198,30 +198,20 @@
         <div class="container">
         <!-- row -->
         <div class="row">
-            <div class="cart-checkout">
-                <div class="col-md-12">
-                    <div class="checkout-title">
-                        <h3>Seus Pedidos</h3>
-                        </div>
-                        <div class="checkout-content">
-                            <div class="table-responsive">
-                                <table class="table table-striped">
-                                    <thead>
-                                        <tr>    
-                                    </thead>
-                            </div>
-                        </div>
-                    </div>
+            <div class="cart-summary">
+                <div class="cart">
+                  <h2>Produtos no Carrinho:</h2>
+                  <ul id="product-list">
+                    <!-- Aqui será adicionado o nome do produto -->
+                  </ul>
                 </div>
-            </div>
+              </div>
+              
             <div class="col-md-7">
-                <!-- Billing Details -->
-                
-                <!-- Billing Details -->
-    <div class="billing-details">
-    <div class="section-title">
-        <h3 class="title">Envio de pedido</h3>
-    </div>
+            <div class="billing-details">
+            <div class="section-title">
+            <h3 class="title">Envio de pedido</h3>
+        </div>
     <form id="formulario">
         <div class="form-group">
             <input class="input" type="text" id="primeironome" placeholder="Primeiro nome">
@@ -259,11 +249,6 @@
       
     <button onclick="sendToWhatsapp()">Enviar pedido</button>
 </div>
-            </div>
-
-            L
-            
-            
         </div>
         <!-- /row -->
     	</div>
@@ -340,6 +325,6 @@
     <script src="js/jquery.zoom.min.js"></script>
     <script src="js/main.js"></script>
     <script src="./js/whatsapp.js"></script>
-
+    <script src="./js/carrinho.js"></script>
 </body>
 </html>

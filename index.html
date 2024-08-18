@@ -207,23 +207,15 @@
                 <div class="products-slick" data-nav="#slick-nav-1">
                     <!-- product 1 -->
                     <div class="product">
-                        <div class="product-img">
-                            <img src="./img/Smartfon_Xiaomi_Poco_X6_5G_8_256Gb_Blue-removebg-preview.png" alt="">
-                        </div>
-                        <div class="product-body">
-                            <h3 class="nameproduct">Smartphone Poco X6 5G</h3>
-                            <h4 class="productprice">R$: 2.000.00</h4>
-                            <div class="product-rating">
-                            </div>
-                            <div class="product-btns">
-                                <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Adicionar</span></button>
-                                <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Quick View</span></button>
-                            </div>
-                        </div>
-                        <div class="add-to-cart">
-                            <button class="add-to-cart-btn" onclick="addToCart(this)"><i class="fa fa-shopping-cart"></i>Adicionar</button>
-                        </div>
-                    </div>
+						<div class="product-img">
+						  <img src="./img/Smartfon_Xiaomi_Poco_X6_5G_8_256Gb_Blue-removebg-preview.png" alt="">
+						</div>
+						<div class="product-body">
+						  <h3 class="product-name">Smartphone Poco X6 5G</h3>
+						  <!-- outros elementos -->
+						  <button class="add-to-cart-btn" onclick="sendProduct('Smartphone Poco X6 5G')">Adicionar</button>
+						</div>
+					  </div>
                     <!-- /product 1 -->
 
                     <!-- product 2 -->
@@ -399,12 +391,11 @@
                                 <i class="fa fa-star"></i>
                             </div>
                             <div class="product-btns">
-                                <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Adicionar</span></button>
                                 <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Quick View</span></button>
                             </div>
                         </div>
                         <div class="add-to-cart">
-                            <button class="add-to-cart-btn"><i class="fa fa-shopping-cart" id="addCart"></i>Adicionar</button>
+                            <button class="add-to-cart-btn" onclick="send()"><i class="fa fa-shopping-cart" id="addCart"></i>Adicionar</button>
                         </div>
                     </div>
                     <!-- /product 8 -->
@@ -572,6 +563,7 @@
 		<script src="js/nouislider.min.js"></script>
 		<script src="js/jquery.zoom.min.js"></script>
 		<script src="js/main.js"></script>
+		<script src="js/carrinho.js"></script>
 
 	</body>
 </html>
